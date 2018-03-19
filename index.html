@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cookie Admin</title>
+	<style>
+
+	@charset "UTF-8";
+	@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+	body {
+	  font-family: 'Open Sans', sans-serif;
+	  font-weight: 300;
+	  line-height: 1.42em;
+	  color:#A7A1AE;
+	  background-color:#1F2739;
+	}
+
+	h1 {
+	  font-size:3em;
+	  font-weight: 300;
+	  line-height:1em;
+	  text-align: center;
+	  color: #4DC3FA;
+	}
+
+	h2 {
+	  font-size:1em;
+	  font-weight: 300;
+	  text-align: center;
+	  display: block;
+	  line-height:1em;
+	  padding-bottom: 2em;
+	  color: #FB667A;
+	}
+
+	h2 a {
+	  font-weight: 700;
+	  text-transform: uppercase;
+	  color: #FB667A;
+	  text-decoration: none;
+	}
+
+	.blue { color: #185875; }
+	.yellow { color: #FFF842; }
+
+	.container th h1 {
+		  font-weight: bold;
+		  font-size: 1em;
+	  text-align: left;
+	  color: #185875;
+	}
+
+	.container td {
+		  font-weight: normal;
+		  font-size: 1em;
+	  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+		   -moz-box-shadow: 0 2px 2px -2px #0E1119;
+		        box-shadow: 0 2px 2px -2px #0E1119;
+	}
+
+	.container {
+		  /*width: 800px;*/
+      margin: auto;
+	}
+
+	.container td, .container th {
+		 padding: 15px;
+	}
+
+	/* Background-color of the odd rows */
+	.container tr:nth-child(odd) {
+		  background-color: #323C50;
+	}
+
+	/* Background-color of the even rows */
+	.container tr:nth-child(even) {
+		  background-color: #2C3446;
+	}
+
+	.container th {
+		  background-color: #1F2739;
+      text-align: center;
+	}
+
+	.container td:first-child { color: #FB667A; }
+
+	.container tr:hover {
+	   background-color: #464A52;
+	-webkit-box-shadow: 0 6px 6px -6px #0E1119;
+		   -moz-box-shadow: 0 6px 6px -6px #0E1119;
+		        box-shadow: 0 6px 6px -6px #0E1119;
+	}
+
+	.container td {
+		text-align: left;
+    max-width: 300px;
+    vertical-align: text-top;
+    overflow-wrap: break-word;
+	}
+
+	.container td:hover {
+	  background-color: #FFF842;
+	  color: #403E10;
+	  font-weight: bold;
+	/*
+	  box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+	  transform: translate3d(6px, -6px, 0);
+	  */
+	  transition-delay: 0s;
+		  transition-duration: 0.4s;
+		  transition-property: all;
+	  transition-timing-function: line;
+	}
+
+	@media (max-width: 849px) {
+	.container td:nth-child(4),
+	.container th:nth-child(4) { display: none; }
+  .container td:nth-child(5),
+	.container th:nth-child(5) { display: none; }
+  .container td { max-width: 150px; font-size: .8em }
+	}
+
+  @media only screen and (max-width: 1180px) and (min-width: 1133px) {
+    .container td { max-width: 230px; }
+  }
+  @media only screen and (max-width: 1132px) and (min-width: 969px) {
+    .container td { max-width: 180px; font-size: .9em }
+  }
+  @media only screen and (max-width: 970px) and (min-width: 850px) {
+    .container td { max-width: 120px; font-size: .9em }
+  }
+
+	</style>
+</head>
+<body>
+<h1><span class="blue">&lt;</span>Table<span class="blue">&gt;</span> <span class="yellow">Responsive</span></h1>
+<h2>Created with love by <a href="http://pablogarciafernandez.com" target="_blank">Pablo García Fernández</a></h2>
+
+	<table class="container">
+		<thead>
+			<tr>
+				<th>IP</th>
+				<th>Host</th>
+				<th>User Agent</th>
+				<th>Date</th>
+				<th>Time</th>
+				<th>Referrer</th>
+				<th>Cookie</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>127.0.0.1</td>
+				<td>45.115.172.18</td>
+				<td>
+          Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6)AppleWebKit/537.36 (KHTML, like Gecko)Chrome/64.0.3282.186 Safari/537.36
+        </td>
+				<td>18/03/2018</td>
+				<td>20:55:44</td>
+				<td>Unspecified</td>
+				<td>test123123</td>
+			</tr>
+			<tr>
+				<td>127.0.0.1</td>
+				<td>45.115.172.18</td>
+				<td>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36</td>
+				<td>18/03/2018</td>
+				<td>20:55:44</td>
+				<td>Unspecified</td>
+				<td>
+          LD_U=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DqCGMVjoZhJU;
+          LD_R=https%3A%2F%2Fwww.youtube.com%2Fresults%3Fsearch_query%3Dadding%2Bsmoke%2Bto%2Bimage%2Busing%2Bphotoshop;
+          CONSENT=YES+IN.en+20160717-08-0; _ga=GA1.2.2069991437.1513092819;
+          CONSENT=YES+IN.en+20160717-08-0; _ga=GA1.2.2069991437.1513092819;
+          CONSENT=YES+IN.en+20160717-08-0; _ga=GA1.2.2069991437.1513092819;
+          LD_S=true; LD_T=037fd209-5644-4f6f-8f4b-d31edac31d2b;
+          LD_S=true; LD_T=037fd209-5644-4f6f-8f4b-d31edac31d2b;
+          PREF=al=en-GB&cvdm=grid&f5=30030&f4=4000000&f6=43409&f1=50000000;
+          PREF=al=en-GB&cvdm=grid&f5=30030&f4=4000000&f6=43409&f1=50000000;
+          PREF=al=en-GB&cvdm=grid&f5=30030&f4=4000000&f6=43409&f1=50000000;
+          SID=owX-KSxPkiBWh4rn7E6vVdvEYAuX_YzeCmzQAOQitAVGrq4YGC06vAWjrx8EWYFLBAJj7A.;
+          APISID=k8VAq0hhxmg_L_qk/AOPLYJABY6o4KgVMz;
+          SAPISID=g5HMJn3XNv1SFKP9/Aosnb7I5De7XzvHzn
+        </td>
+			</tr>
+			<tr>
+				<td>127.0.0.1</td>
+				<td>45.115.172.18</td>
+				<td>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36</td>
+				<td>18/03/2018</td>
+				<td>20:55:44</td>
+				<td>Unspecified</td>
+				<td>test123123</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
